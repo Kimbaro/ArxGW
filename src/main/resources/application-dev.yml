@@ -1,0 +1,27 @@
+custom:
+  linuxuser:
+    app-name: Aerix Gateway Embedded Server
+    version: 0.0.1
+    serial: ASDASDASDASD
+    passwd: 1234
+  network:
+    vid: 999
+    ip: 127.0.0.1
+  path:
+    server-ca-cert-path: /etc/mosquitto/server/ca_certificates
+    server-cert-path: /etc/mosquitto/server/certs
+    device-ca-cert-path: /etc/mosquitto/device/ca_certificates
+    device-cert-path: /etc/mosquitto/device/certs
+  build-option:
+    debug: true
+
+server:
+  port: 3030
+
+spring:
+  flyway:
+    baseline-version:
+  main:
+    lazy-initialization: true
+  jmx:
+    enabled: false
